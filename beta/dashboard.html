@@ -1,0 +1,113 @@
+<div class="reveal">
+
+  <!-- Any section element inside of this container is displayed as a slide -->
+  <div class="slides">
+
+    <section id="dashboard">
+<!--
+      <img src= <=avatar_url%>/>
+      dashboard, contains a list of all the public and private projects in github and bitbucket
+      also will contain bitcoin wallet of the amount the user made on comments and education videos to help other developers 
+      + the "codelapse command area"
+
+      <p>Well, well, well, <= login %>!</p>
+      <p>
+      < if !email.empty? %> It looks like your public email address is <%= email %>.
+      < else %> It looks like you don't have a public email. That's cool.
+      < end %>
+      </p>
+      <h1> <= auth_result['repos'].count  %>
+    </h1>
+      < repos.each do |repo| %>
+	<td><= repo['full_name'] %></td>
+      <td><= repo['clone_url'] %></td>
+      <br />
+    < end %>
+
+      <p>
+      < if defined? private_emails %>
+	With your permission, we were also able to dig up your private email addresses:
+      <= private_emails.map{ |private_email_address| private_email_address["email"] }.join(', ') %>
+    < else %>
+	Also, you're a bit secretive about your private email addresses.
+    < end %>
+      </p>
+-->
+    </section>
+
+    <!-- Example of nested vertical slides -->
+    <section id="dashboard">
+      <section id="#{project_title}">
+	this will contain the GithubFinder-like explorer 
+	+ the "codelapse command area"
+      </section>
+
+      <section id="#{project_title}-commit-file">
+
+	<div id="hello">
+	  <div class="container">
+	    <div class="row">
+	      <div class="col-lg-8 col-lg-offset-2 centered">
+
+		<tty-player controls src='myrec.ttyrec'> </tty-player>
+
+	      </div> <!-- /col-lg-8 -->
+	    </div> <!-- /row -->
+	  </div> <!-- /container -->
+	</div> <!-- /hello -->
+	this contains the code video 
+	+ the "codelapse command area", a text line, where developers can do @mention
+
+	@next will get the next changed file display its info and run its codelapse
+	@next_commit will get the next commit of the same video
+	@prev
+	@prev_commit
+
+	@issue will raise an issue onthe github\bitbucket repository project page 
+	@stackoverflow will ask a question on stackoverflow related to the tags of the projects
+	@irc will forward message on the irc channel related to this project
+	@everyone will forward the message to stackoverflow, irc, git issue, and everybody
+	@video will pause the codelapsevideo and start recording user video and tag it to this frame of the video
+	@audio will pause the codelapse audio
+	@github/usernmae 0.0001 bitcoin #will transfer this amount of money to this user, if the viewer just liked a video made by the user about this frame of the code
+	@list list all users who are viewing the video at the moment, and @message can send them a message
+
+	@tag add tag to the codeblock displayed in the codelapse, i.e @tag nlp , so when a company seeks developers who work in nlp, their ads will be displayed only while the code blocks of those are viewed, this is targeted software recuriutment at best!!!! another crazy idea would be to make it like a game where on each ad for specific tag by that company would hold a clue, if a developer collects all the clues of the hidden ads, then he will be able to submit to this resume to this company, while others wouldnt be able to :)
+
+	<h2 style="color: black">Vertical Slides</h2>
+	<p>Slides can be nested inside of each other.</p>
+	<p>Use the <em>Space</em> key to navigate through all slides.</p>
+	<br>
+      </section>
+    </section>
+  </div>
+
+</div>
+
+<script src="js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+
+// Full list of configuration options available at:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+controls: true,
+progress: true,
+history: true,
+center: true,
+
+transition: 'slide'//, // none/fade/slide/convex/concave/zoom
+
+// Optional reveal.js plugins
+//dependencies: [
+//	{ src: 'js/classList.js', condition: function() { return !document.body.classList; } },
+//	{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+//	{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+//	{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+//	{ src: 'plugin/zoom-js/zoom.js', async: true },
+//	{ src: 'plugin/notes/notes.js', async: true }
+//]
+});
+
+</script>
