@@ -1,44 +1,143 @@
-<!--
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Codelapse">
+<meta name="author" content="Codelapse">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+
+
+<title>Codelapse</title>
+
+
+<!-- Bootstrap core CSS -->
+<link href="/css/bootstrap.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="/css/main.css" rel="stylesheet">
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+
+<!-- Custom styles for this template -->
+<link href="/css/main.css" rel="stylesheet">
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/css/reveal.css">
+
+<link rel="stylesheet" href="/css/tty-player.css">
+<script src="/js/term.js"></script>
+<script src="/js/tty-player.js"></script>
+
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<!-- Fixed navbar -->
+
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+
+      <a herf="http://www.codelapse.io"><img style= "height: 60px; width: auto;" src="/img/codelapse_logo1.png"/>
+
+      </div> <!-- navbar -->
+    </div> <!--container -->
+  </div> <!--navbar-header -->
+</div>
+
+<div id="hello">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 centered"> 
+
+
+	<!--
 <tty-player autoplay loop controls src='<%=@rec%>'></tty-player>
 -->
-<!--
+	<!--
 <tty-player autoplay loop controls src='vid.termrec'
 window-title="filetitle"
 ></tty-player>
 -->
 
 
-<tty-player controls src='myrec.ttyrec'>
-</tty-player>
+	<tty-player controls src='myrec.ttyrec'>
+	</tty-player>
 
-<tty-player autoplay loop src="data:application/x-ttyrec;base64,
-AAAAAAttCwCBAAAAG1sxbRtbN20lG1syN20bWzFtG1ttICAgICAgICAgICAgICAgICAgICAgICAg
-ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
-ICAgICAgICAgICAgICAgICAgICAgICAgDSANAAAAACNtCwAXAAAAG10yO2NocmlzQGR1b25leDog
-L3RtcAcAAAAAZDsMAC4AAAANG1ttG1syN20bWzI0bRtbSg0KG1swMTszMm0bWzQ1bS90bXAbWzAw
-bSQgG1tLAAAAAJk7DAACAAAAGz0DAAAAg4QBAAEAAABwAwAAAOSsAgADAAAACHBhAwAAAOI2BAAB
-AAAAYwMAAADmNAcAAQAAAGEDAAAA6voIAAEAAAB1AwAAAFxvCgABAAAAcgMAAADNDQwAAQAAACAD
-AAAARQAOAAEAAAAtBAAAAE4/AgABAAAAUwQAAACEZwUAAQAAAHMEAAAARmcHAAEAAAAgBAAAALt4
-CwABAAAAdAQAAACvtA0AAQAAAHQEAAAA29oOAAEAAAB5BQAAAGhKAgABAAAAcgUAAADOlwMAAQAA
-AGUFAAAAOiIGAAEAAABjBQAAAH5RCQAbAAAAGz4NDQobXTI7cGFjYXVyIC1TcyB0dHlyZWMHBwAA
-AOoECACKAwAAG1sxOzM1bWF1ci8bWzBtG1sxbXR0eXJlYyAbWzE7MzJtMS4wLjgtMhtbMG0gKDM0
-KQ0KICAgIEEgdHR5IHJlY29yZGVyIGFuZCBwbGF5ZXINChtbMTszNW1hdXIvG1swbRtbMW10ZXJt
-cmVjIBtbMTszMm0wLjE3LTEbWzBtICgxMSkNCiAgICBBIHNldCBvZiB0b29scyBmb3IgcmVjb3Jk
-aW5nL3JlcGxheWluZyB0ZXh0LXRlcm1pbmFsIHNlc3Npb24sIGluIHRoZSB2ZWluIG9mIHR0eXJl
-Yy4NChtbMTszNW1hdXIvG1swbRtbMW1wbGF5dHR5cmVjIBtbMTszMm0xLjAtMxtbMG0gKDYpDQog
-ICAgYSBwbGF5ZXIgZm9yIHJlY29yZGVkIG5ldGhhY2sgZ2FtZXMgcHJvZHVjZWQgYnkgZGdhbWVs
-YXVuY2gNChtbMTszNW1hdXIvG1swbRtbMW10dHlnaWYgG1sxOzMybTEuMC44LTIbWzBtICg2KQ0K
-ICAgIEEgdG9vbCB0aGF0IGNvbnZlcnRzIGEgdHR5cmVjIGZpbGUgaW50byBnaWYgZmlsZXMuDQob
-WzE7MzVtYXVyLxtbMG0bWzFtaXBidCAbWzE7MzJtMjAxNDEwMjYuMjE5NzQzMi0xG1swbSAoNCkN
-CiAgICBBIGhpZ2gtdGVjaCB0dHlyZWMgcGxheWVyDQobWzE7MzVtYXVyLxtbMG0bWzFtdHR5cmVj
-LWdpdCAbWzE7MzJtMjAxMzA5MTgtMRtbMG0gKDQpDQogICAgQSB0dHkgcmVjb3JkZXIgYW5kIHBs
-YXllciAtIHRoaXMgaXMgbm90IHRoZSBvZmZpY2lhbCB1cHN0cmVhbSB2ZXJzaW9uDQobWzE7MzVt
-YXVyLxtbMG0bWzFtc2VxMmdpZiAbWzE7MzJtMC4xMC40LTEbWzBtICgxKQ0KICAgIENvbnZlcnQg
-YSB0dHlyZWMgcmVjb3JkIGludG8gYSBnaWYgYW5pbWF0aW9uIGRpcmVjdGx5DQobWzE7MzVtYXVy
-LxtbMG0bWzFtc2VxMmdpZi1naXQgG1sxOzMxbTAuMTAuMy4xODIuMjUzZGFjYi0xG1swbSAoMCkN
-CiAgICBDb252ZXJ0IGEgdHR5cmVjIHJlY29yZCBpbnRvIGEgZ2lmIGFuaW1hdGlvbiBkaXJlY3Rs
-eQ0KBwAAAOsGCACYAAAAG1sxbRtbN20lG1syN20bWzFtG1ttICAgICAgICAgICAgICAgICAgICAg
-ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
-ICAgICAgICAgICAgICAgICAgICAgICAgICAgDSANG10yO2NocmlzQGR1b25leDogL3RtcAcHAAAA
-x7wIADAAAAANG1ttG1syN20bWzI0bRtbSg0KG1swMTszMm0bWzQ1bS90bXAbWzAwbSQgG1tLGz0I
-AAAAnV8IAAMAAAANDQo="></tty-player>
+	<tty-player autoplay loop src="data:application/x-ttyrec;base64,
+	AAAAAAttCwCBAAAAG1sxbRtbN20lG1syN20bWzFtG1ttICAgICAgICAgICAgICAgICAgICAgICAg
+	ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+	ICAgICAgICAgICAgICAgICAgICAgICAgDSANAAAAACNtCwAXAAAAG10yO2NocmlzQGR1b25leDog
+	L3RtcAcAAAAAZDsMAC4AAAANG1ttG1syN20bWzI0bRtbSg0KG1swMTszMm0bWzQ1bS90bXAbWzAw
+	bSQgG1tLAAAAAJk7DAACAAAAGz0DAAAAg4QBAAEAAABwAwAAAOSsAgADAAAACHBhAwAAAOI2BAAB
+	AAAAYwMAAADmNAcAAQAAAGEDAAAA6voIAAEAAAB1AwAAAFxvCgABAAAAcgMAAADNDQwAAQAAACAD
+	AAAARQAOAAEAAAAtBAAAAE4/AgABAAAAUwQAAACEZwUAAQAAAHMEAAAARmcHAAEAAAAgBAAAALt4
+	CwABAAAAdAQAAACvtA0AAQAAAHQEAAAA29oOAAEAAAB5BQAAAGhKAgABAAAAcgUAAADOlwMAAQAA
+	AGUFAAAAOiIGAAEAAABjBQAAAH5RCQAbAAAAGz4NDQobXTI7cGFjYXVyIC1TcyB0dHlyZWMHBwAA
+	AOoECACKAwAAG1sxOzM1bWF1ci8bWzBtG1sxbXR0eXJlYyAbWzE7MzJtMS4wLjgtMhtbMG0gKDM0
+	KQ0KICAgIEEgdHR5IHJlY29yZGVyIGFuZCBwbGF5ZXINChtbMTszNW1hdXIvG1swbRtbMW10ZXJt
+	cmVjIBtbMTszMm0wLjE3LTEbWzBtICgxMSkNCiAgICBBIHNldCBvZiB0b29scyBmb3IgcmVjb3Jk
+	aW5nL3JlcGxheWluZyB0ZXh0LXRlcm1pbmFsIHNlc3Npb24sIGluIHRoZSB2ZWluIG9mIHR0eXJl
+	Yy4NChtbMTszNW1hdXIvG1swbRtbMW1wbGF5dHR5cmVjIBtbMTszMm0xLjAtMxtbMG0gKDYpDQog
+	ICAgYSBwbGF5ZXIgZm9yIHJlY29yZGVkIG5ldGhhY2sgZ2FtZXMgcHJvZHVjZWQgYnkgZGdhbWVs
+	YXVuY2gNChtbMTszNW1hdXIvG1swbRtbMW10dHlnaWYgG1sxOzMybTEuMC44LTIbWzBtICg2KQ0K
+	ICAgIEEgdG9vbCB0aGF0IGNvbnZlcnRzIGEgdHR5cmVjIGZpbGUgaW50byBnaWYgZmlsZXMuDQob
+	WzE7MzVtYXVyLxtbMG0bWzFtaXBidCAbWzE7MzJtMjAxNDEwMjYuMjE5NzQzMi0xG1swbSAoNCkN
+	CiAgICBBIGhpZ2gtdGVjaCB0dHlyZWMgcGxheWVyDQobWzE7MzVtYXVyLxtbMG0bWzFtdHR5cmVj
+	LWdpdCAbWzE7MzJtMjAxMzA5MTgtMRtbMG0gKDQpDQogICAgQSB0dHkgcmVjb3JkZXIgYW5kIHBs
+	YXllciAtIHRoaXMgaXMgbm90IHRoZSBvZmZpY2lhbCB1cHN0cmVhbSB2ZXJzaW9uDQobWzE7MzVt
+	YXVyLxtbMG0bWzFtc2VxMmdpZiAbWzE7MzJtMC4xMC40LTEbWzBtICgxKQ0KICAgIENvbnZlcnQg
+	YSB0dHlyZWMgcmVjb3JkIGludG8gYSBnaWYgYW5pbWF0aW9uIGRpcmVjdGx5DQobWzE7MzVtYXVy
+	LxtbMG0bWzFtc2VxMmdpZi1naXQgG1sxOzMxbTAuMTAuMy4xODIuMjUzZGFjYi0xG1swbSAoMCkN
+	CiAgICBDb252ZXJ0IGEgdHR5cmVjIHJlY29yZCBpbnRvIGEgZ2lmIGFuaW1hdGlvbiBkaXJlY3Rs
+	eQ0KBwAAAOsGCACYAAAAG1sxbRtbN20lG1syN20bWzFtG1ttICAgICAgICAgICAgICAgICAgICAg
+	ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+	ICAgICAgICAgICAgICAgICAgICAgICAgICAgDSANG10yO2NocmlzQGR1b25leDogL3RtcAcHAAAA
+	x7wIADAAAAANG1ttG1syN20bWzI0bRtbSg0KG1swMTszMm0bWzQ1bS90bXAbWzAwbSQgG1tLGz0I
+	AAAAnV8IAAMAAAANDQo="></tty-player>
+      </div><!-- /col-lg-8 -->
+    </div><!-- /row -->
+  </div> <!-- /container -->
+</div><!-- /hello --> 
+
+<div id="f-left">
+  <div class="container">
+    <div class="row">
+      <h4>
+
+	<p>crafted with <i style= "color: red"class="fa fa-heart"></i> forever free for opensource, please check our <b style= "color : Grey">Enterprise & Private work</b> pricing.</p>
+
+	<p> Copyright © 2016 Codelapse. All rights reserved.</p>
+      </h4>
+    </div>
+  </div>
+</div>
+
+
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="/js/bootstrap.js"></script>
+</body>
+</html>
