@@ -172,8 +172,17 @@ IEcEAAkAAAAbXTI7ZXhpdAdBv5JWYUsEAAkAAAAbXTE7ZXhpdAc=
     </div>
   </div>
 </div>
-
-
+<script>
+$.ajax({ 
+type: "GET",
+dataType: "jsonp",
+url: "http://api.gitlapse.com/git",
+success: function(data){        
+console.log(data)
+alert(data);
+}
+});
+</script>
 <!-- Bootstrap core JavaScript
     ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
