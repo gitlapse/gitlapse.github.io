@@ -451,7 +451,9 @@ ISP.setUp = function() {
 	// smidgeon more by renaming them all, but that’d be uglier.
 	// Candidates: defaultPlaybackRate, playbackRate, currentSrc, readyState, networkState, paused, duration.
 
-	self.defaultPlaybackRate = self.playbackRate = 1;
+	//NOTE changing playbackRate per https://github.com/chris-morgan/tty-player/issues/5#issuecomment-170413897
+	// self.defaultPlaybackRate = self.playbackRate = 1;
+	self.defaultPlaybackRate = self.playbackRate = 0.1;
 	self.defaultPlaybackStartPosition = 0;
 	self.currentSrc = "";
 	self.readyState = HAVE_NOTHING;
