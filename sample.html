@@ -173,16 +173,10 @@ IEcEAAkAAAAbXTI7ZXhpdAdBv5JWYUsEAAkAAAAbXTE7ZXhpdAc=
   </div>
 </div>
 <script>
-$.ajax({ 
-type: "GET",
-dataType: "json",
-url: "http://api.gitlapse.com/git",
-success: function(data){        
-console.log(data);
-console.log( "ready!" );
-alert(data);
-}
-});
+$.getJSON("http://api.gitlapse.com/git", function(json) { 
+    alert(json);
+    console.log(json);
+    });
 </script>
 <!-- Bootstrap core JavaScript
     ================================================== -->
