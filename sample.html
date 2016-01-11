@@ -175,10 +175,11 @@ IEcEAAkAAAAbXTI7ZXhpdAdBv5JWYUsEAAkAAAAbXTE7ZXhpdAc=
 <script>
 $.ajax({ 
 type: "GET",
-dataType: "jsonp",
+dataType: "json",
 url: "http://api.gitlapse.com/git",
 success: function(data){        
-console.log(data)
+console.log(data);
+console.log( "ready!" );
 alert(data);
 }
 });
