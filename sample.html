@@ -183,11 +183,14 @@ dataType: 'json'
    use it if you are passing params in a post request
  */
 }).done(function( data ) {
+var data =  $.parseJSON( data );
 console.log( "ajax is working");
 console.log( data );
-$.each(data, function(key, value) {
-  console.log(key+ ':::' + value);
-  });
+console.log( data['ping'] );
+
+//$.each(data, function(key, value) {
+//  console.log(key+ ':::' + value);
+ // });
 
 });
 /*;
