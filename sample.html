@@ -177,10 +177,18 @@ $.ajax({
 type: 'GET',
 url: 'http://api.gitlapse.com/v1/ping',
 crossDomain: true,
-dataType: 'json',
+dataType: 'json'
 /*
    data: {"some":"json"}
    use it if you are passing params in a post request*/
+
+statusCode: {
+404: function() {
+alert( "page not found" );
+}
+200: function(){
+alert( "endpoint fine..." );
+}
 });
 </script>
 <!-- Bootstrap core JavaScript
