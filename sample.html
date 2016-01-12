@@ -178,15 +178,26 @@ type: 'GET',
 url: 'http://api.gitlapse.com/v1/ping',
 crossDomain: true,
 dataType: 'json'
+success: function(response) {
+result = $(response).find("#ping");
+console.log(response); // works as expected (returns all html)
+console.log(result); // returns [object Object]
+}
 /*
    data: {"some":"json"}
    use it if you are passing params in a post request*/
 
-}).done(function( data ) {
-    console.log( "ajax is working");
-    console.log( data );
-    console.log( data[:ping] );
-    });;
+})
+
+//.done(function( data ) {
+
+//console.log( "ajax is working");
+ 
+//console.log( data );
+ 
+//console.log( data[:ping] );
+ 
+//});;
 </script>
 <!-- Bootstrap core JavaScript
     ================================================== -->
