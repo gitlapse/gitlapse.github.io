@@ -185,12 +185,13 @@ dataType: 'json'
 }).done(function( data ) {
   data = JSON.parse(data);
 
-//data =  JSON.parse( data );
-console.log( "ajax is working");
-console.log( data );
-console.log( data['ping'] );
+  //data =  JSON.parse( data );
+  console.log( "ajax is working");
+  console.log( data );
+  console.log( data.ping );
+  //console.log( data['ping'] );
 
-//$.each(data, function(key, value) {
+  //$.each(data, function(key, value) {
 //  console.log(key+ ':::' + value);
  // });
 
