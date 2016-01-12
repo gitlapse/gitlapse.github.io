@@ -177,20 +177,20 @@ $.ajax({
 type: 'GET',
 url: 'http://api.gitlapse.com/v1/ping',
 crossDomain: true,
-dataType: 'json'
+dataType: 'json',
 success: function(response) {
 console.log(response); // works as expected (returns all html)
 }
 /*
-   data: {"some":"json"}
-   use it if you are passing params in a post request*/
+data: {"some":"json"}
+use it if you are passing params in a post request*/
 
 })
 
 //.done(function( data ) {
 
 //console.log( "ajax is working");
- 
+
 //console.log( data );
  
 //console.log( data[:ping] );
