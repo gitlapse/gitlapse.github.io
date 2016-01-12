@@ -179,9 +179,7 @@ url: 'http://api.gitlapse.com/v1/ping',
 crossDomain: true,
 dataType: 'json'
 success: function(response) {
-result = $(response).find("#ping");
 console.log(response); // works as expected (returns all html)
-console.log(result); // returns [object Object]
 }
 /*
    data: {"some":"json"}
