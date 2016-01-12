@@ -182,9 +182,9 @@ dataType: 'json'
    data: {"some":"json"}
    use it if you are passing params in a post request*/
 
-
-}).done(function() {
+}).done(function( data ) {
     console.log( "ajax is working");
+    console.log( data );
     });;
 </script>
 <!-- Bootstrap core JavaScript
