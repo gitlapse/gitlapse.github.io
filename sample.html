@@ -85,9 +85,18 @@ window-title="filetitle"
 	</tty-player>
 -->
 
+<!--
 	<tty-player defaultPlaybackRate="1" playbackRate=0.001 controls autoplay loop src="ttyrecord"></tty-player>
-	<!-- <tty-player defaultPlaybackRate="1" playbackRate="10" controls autoplay loop  src="ttyrecord"></tty-player>
 -->
+
+<tty-player controls autoplay loop src="data:application/x-ttyrec;base64,
+TheJSValue
+">
+</tty-player>
+
+<!-- <tty-player defaultPlaybackRate="1" playbackRate="10" controls autoplay loop  src="ttyrecord"></tty-player>
+-->
+<!--
 	<tty-player playbackRate="1000" src="data:application/x-ttyrec;base64,
 	Pb+SVoUbBQC9AAAAG1sxbRtbN20lG1syN20bWzFtG1swbSAgICAgICAgICAg
 	ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
@@ -122,6 +131,7 @@ window-title="filetitle"
 	IEcEAAkAAAAbXTI7ZXhpdAdBv5JWYUsEAAkAAAAbXTE7ZXhpdAc=
 	">
 	</tty-player>
+-->
 	<!--
 <tty-player autoplay loop src="data:application/x-ttyrec;base64,
 	AAAAAAttCwCBAAAAG1sxbRtbN20lG1syN20bWzFtG1ttICAgICAgICAgICAgICAgICAgICAgICAg
@@ -188,6 +198,23 @@ dataType: 'json'
   console.log( data.ping );
 });
 </script>
+
+<script>
+$.ajax({
+type: 'GET',
+url: 'https://api.gitlapse.com/v1/git?SHA=1b77b4aac9e1111ce9cba1451d15e1cdfeafe1f9',
+crossDomain: true,
+dataType: 'json'
+/* ,
+   data: {"some":"json"}
+   use it if you are passing params in a post request
+ */
+}).done(function( data ) {
+  console.log( "ajax is working for /v1/git");
+  console.log( data );
+});
+</script>
+
 <!-- Bootstrap core JavaScript
     ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
