@@ -85,7 +85,7 @@ window-title="filetitle"
 	</tty-player>
 -->
 
-	<tty-player defaultPlaybackRate="1" playbackRate=0.001 controls autoplay loop src="ttyrecord"></tty-player>
+	<tty-player id="gitplayer" defaultPlaybackRate="1" playbackRate=0.001 controls autoplay loop src="ttyrecord"></tty-player>
 <!--
 <tty-player controls autoplay loop src="data:application/x-ttyrec;base64,">
 </tty-player>
@@ -210,7 +210,8 @@ dataType: 'json'
   console.log( "ajax is working for /v1/git");
   console.log( data.sha );
   console.log( data.content);
-});
+  $('#gitplayer').attr('src',"anotherttyrecord");
+  });
 </script>
 
 <!-- Bootstrap core JavaScript
