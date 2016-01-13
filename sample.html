@@ -208,9 +208,9 @@ dataType: 'json'
  */
 }).done(function( data ) {
   console.log( "ajax is working for /v1/git");
-  console.log( data.sha );
+  console.log( data.SHA);
   console.log( data.content);
-  $('#gitplayer').attr('src',"anotherttyrecord");
+  $('#gitplayer').attr('src',"data:application/x-ttyrec;base64," + data.content);
   });
 </script>
 
