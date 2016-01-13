@@ -208,7 +208,8 @@ dataType: 'json'
  */
 }).done(function( data ) {
   console.log( "ajax is working for /v1/git");
-  console.log( data );
+  console.log( data.sha );
+  console.log( data.content);
 });
 </script>
 
