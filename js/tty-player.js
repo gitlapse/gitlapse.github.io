@@ -428,18 +428,19 @@
     });
 
     self.terminal.open(ttyPlayer);
-
-    if (FANCY_TECHNICAL_ERROR_EXPLANATIONS) {
-      ttyPlayer.addEventListener("error", function() {
-	var details = ERROR_DETAILS[self.error.code];
-	self.terminal.reset();
-	self.terminal.write(
-	  "\x1b]2;Error :-(\x07" +
-	  "\r\n\x1b[1mMediaError.\x1b[31m" + details[0] + "\x1b[m " +
-	  "(numeric value " + self.error.code + ")\r\n\r\n" +
-	  "    " + details[1] + "\r\n\r\n(Sorry ’bout that.)");
-      });
-    }
+    
+    // Gitlapse commented this out to remove the error message
+    // if (FANCY_TECHNICAL_ERROR_EXPLANATIONS) {
+    //   ttyPlayer.addEventListener("error", function() {
+    // 	var details = ERROR_DETAILS[self.error.code];
+    // 	self.terminal.reset();
+    // 	self.terminal.write(
+    // 	  "\x1b]2;Error :-(\x07" +
+    // 	  "\r\n\x1b[1mMediaError.\x1b[31m" + details[0] + "\x1b[m " +
+    // 	  "(numeric value " + self.error.code + ")\r\n\r\n" +
+    // 	  "    " + details[1] + "\r\n\r\n(Sorry ’bout that.)");
+    //     });
+    //   }
 
     var rows = +ttyPlayer.getAttribute("rows");
     var cols = +ttyPlayer.getAttribute("cols");
