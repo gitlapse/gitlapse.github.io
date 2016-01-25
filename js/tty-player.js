@@ -915,19 +915,22 @@
     // >    steps, using the DOM manipulation task source:
 
     // >     1. Set the error attribute to a new MediaError object whose code attribute is set to MEDIA_ERR_SRC_NOT_SUPPORTED.
-    this.error = new My.MediaError(MEDIA_ERR_SRC_NOT_SUPPORTED);
+    // Gitlapse removed this
+    //this.error = new My.MediaError(MEDIA_ERR_SRC_NOT_SUPPORTED);
 
     // >     2. Forget the media element's media-resource-specific tracks.
     // [Nothing to do.]
 
     // >     3. Set the element's networkState attribute to the NETWORK_NO_SOURCE value.
-    this.networkState = NETWORK_NO_SOURCE;
+    // Gitlapse removed this
+    //this.networkState = NETWORK_NO_SOURCE;
 
     // >     4. Set the element's show poster flag to true.
-    this.showPoster = true;
+    // Gitlapse removed this
+    //this.showPoster = true;
 
     // >     5. Fire a simple event named error at the media element.
-    this.fireSimpleEvent("error");
+    //this.fireSimpleEvent("error");
 
     // >     6. Set the element's delaying-the-load-event flag to false. This stops delaying the load event.
     //this.delayingTheLoadEvent = false;
