@@ -48,8 +48,10 @@ tty-player-poster {
 	transition: opacity 0.2s linear;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-image: url("data:image/svg+xml,%3C?xml%20version='1.0'%20encoding='UTF-8'%20standalone='no'?%3E%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='66'%20height='66'%3E%3Cfilter%20id='f'%3E%3CfeColorMatrix%20type='matrix'%20values='0%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%20.5%200'/%3E%3CfeGaussianBlur%20result='r'%20stdDeviation='2'/%3E%3CfeComposite%20in='SourceGraphic'%20in2='r'/%3E%3C/filter%3E%3Cpath%20fill='%23ddd'%20stroke='%23ccc'%20stroke-width='1'%20d='M33,5.5A27.5,27.5%200%200%200%205.5,33%2027.5,27.5%200%200%200%2033,60.5%2027.5,27.5%200%200%200%2060.5,33%2027.5,27.5%200%200%200%2033,5.5Zm-9.5,13%2025,14.5-25,14.5%200,-29z'%20filter='url(%23f)'/%3E%3C/svg%3E"); /* image */
 
+	/* background-image: url("data:image/svg+xml,%3C?xml%20version='1.0'%20encoding='UTF-8'%20standalone='no'?%3E%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='66'%20height='66'%3E%3Cfilter%20id='f'%3E%3CfeColorMatrix%20type='matrix'%20values='0%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%20.5%200'/%3E%3CfeGaussianBlur%20result='r'%20stdDeviation='2'/%3E%3CfeComposite%20in='SourceGraphic'%20in2='r'/%3E%3C/filter%3E%3Cpath%20fill='%23ddd'%20stroke='%23ccc'%20stroke-width='1'%20d='M33,5.5A27.5,27.5%200%200%200%205.5,33%2027.5,27.5%200%200%200%2033,60.5%2027.5,27.5%200%200%200%2060.5,33%2027.5,27.5%200%200%200%2033,5.5Zm-9.5,13%2025,14.5-25,14.5%200,-29z'%20filter='url(%23f)'/%3E%3C/svg%3E"); 
+	 * /* image */
+*/
 	background-image: url("https://www.gitlapse.com/img/logo.png");
 	position: absolute;
 	top: 0;
