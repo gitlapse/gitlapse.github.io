@@ -75,7 +75,7 @@ permalink: lapses/
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 centered"> 
 
-<tty-player autoplay loop controls src=''></tty-player>
+<tty-player id='gitlapse-player' autoplay loop controls src=''></tty-player>
 
 <!-- 
 <tty-player autoplay loop controls src='<%=@rec%>'></tty-player>
@@ -230,7 +230,7 @@ dataType: 'json'
   console.log( data.content);
   console.log( $.urlParam('SHA') );
   //$('#gitplayer').attr('src',"data:application/x-ttyrec;base64," + data.content);
-  $('#tty-player').attr('src',"data:application/x-ttyrec;base64," + data.content);
+  $('#gitlapse-player').attr('src',"data:application/x-ttyrec;base64," + data.content);
   });
 </script>
 
