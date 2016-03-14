@@ -35,13 +35,13 @@ permalink: lapses/
 <link href="/css/main.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
 
-<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 
-
+<!--
 <!-- Custom styles for this template -->
 <link href="/css/main.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="/css/reveal.css">
+-->
 
 <link rel="stylesheet" href="/css/tty-player.css">
 <script src="/js/term.js"></script>
@@ -74,103 +74,7 @@ permalink: lapses/
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 centered"> 
-
 	<tty-player autoplay loop controls src=''></tty-player>
-
-	<!--
-<tty-player id='gitlapse-player' autoplay loop controls src=''></tty-player>
--->
-
-	<!-- 
-<tty-player autoplay loop controls src='<%=@rec%>'></tty-player>
--->
-	<!--
-<tty-player autoplay loop controls src='vid.termrec'
-window-title="filetitle"
-></tty-player>
--->
-	<!--
-	<tty-player controls src='myrec.ttyrec'>
-	</tty-player>
--->
-	<!--
-	<tty-player id="gitplayer" defaultPlaybackRate="1" playbackRate=0.001 controls autoplay src="ttyrecord"></tty-player>
--->
-	<!--
-<tty-player controls autoplay loop src="data:application/x-ttyrec;base64,">
-</tty-player>
--->
-	<!-- <tty-player defaultPlaybackRate="1" playbackRate="10" controls autoplay loop  src="ttyrecord"></tty-player>
--->
-	<!--
-	<tty-player controls playbackRate="1000" src="data:application/x-ttyrec;base64,
-	Pb+SVoUbBQC9AAAAG1sxbRtbN20lG1syN20bWzFtG1swbSAgICAgICAgICAg
-	ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
-	ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
-	ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
-	ICAgICAgICAgICAgICAgICAgDSANPb+SVlAcBQBAAAAAG10yO3pvdGhlcnN0
-	dXBpZGd1eUBrYWxhYmFsYTogfi9naXRsYXBzZS5jb20vZ2l0bGFwc2UuZ2l0
-	aHViLmlvBz2/klZsHAUAFAAAABtdMTsuLnBzZS5naXRodWIuaW8HPb+SVk3u
-	BQB+AAAADRtbMG0bWzI3bRtbMjRtG1tKG1swMTszMm3inpwgG1swMTszMm0g
-	G1szNm1naXRsYXBzZS5naXRodWIuaW8gG1swMTszNG1naXQ6KBtbMzFtbWFz
-	dGVyG1szNG0pIBtbMzNt4pyXG1swMG0bWzAwbRtbMDE7MzRtIBtbMDBtPb+S
-	VoruBQADAAAAG1tLPb+SVr/uBQAHAAAAG1s/MWgbPT6/klbgRgAAAQAAAGw+
-	v5JWObMBAAMAAAAIbHM+v5JWE2gDAAcAAAAbWz8xbBs+Pr+SVl1oAwABAAAA
-	DT6/klZ7aAMAAgAAAA0KPr+SVjtuAwAaAAAAG10yO2xzIC0tY29sb3I9dHR5
-	BxtdMTtscwc+v5JWhJEDALYAAAAbWzBtG1swMTszNG1iZXRhG1swbSAgYmV0
-	YS5odG1sICBDTkFNRSAgG1swMTszNG1jc3MbWzBtICAbWzAxOzM0bWZvbnRz
-	G1swbSAgaGFjay5yYiAgG1swMTszNG1pbWcbWzBtICBpbmRleC5odG1sICAb
-	WzAxOzM0bWpzG1swbSAgUkVBRE1FLm1kICBzYW1wbGUuaHRtbCAgdHR5cmVj
-	b3JkICAbWzAxOzM0bXZpZXdzG1swbT6/klY8kgMAAgAAAA0KPr+SViqUAwC9
-	AAAAG1sxbRtbN20lG1syN20bWzFtG1swbSAgICAgICAgICAgICAgICAgICAg
-	ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
-	ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
-	ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
-	ICAgICAgICAgDSANPr+SVkGXAwBUAAAAG10yO3pvdGhlcnN0dXBpZGd1eUBr
-	YWxhYmFsYTogfi9naXRsYXBzZS5jb20vZ2l0bGFwc2UuZ2l0aHViLmlvBxtd
-	MTsuLnBzZS5naXRodWIuaW8HPr+SVlUEBAB+AAAADRtbMG0bWzI3bRtbMjRt
-	G1tKG1swMTszMm3inpwgG1swMTszMm0gG1szNm1naXRsYXBzZS5naXRodWIu
-	aW8gG1swMTszNG1naXQ6KBtbMzFtbWFzdGVyG1szNG0pIBtbMzNt4pyXG1sw
-	MG0bWzAwbRtbMDE7MzRtIBtbMDBtPr+SVo0EBAADAAAAG1tLPr+SVqYEBAAH
-	AAAAG1s/MWgbPUC/klY7RgcAAQAAAGVAv5JWfNELAAMAAAAIZXhAv5JWLmUN
-	AAEAAABpQb+SVjh9AAABAAAAdEG/klYCPwQACgAAABtbPzFsGz4NDQpBv5JW
-	IEcEAAkAAAAbXTI7ZXhpdAdBv5JWYUsEAAkAAAAbXTE7ZXhpdAc=
-	">
-	</tty-player>
--->
-	<!--
-	<tty-player autoplay loop src="data:application/x-ttyrec;base64,
-	AAAAAAttCwCBAAAAG1sxbRtbN20lG1syN20bWzFtG1ttICAgICAgICAgICAgICAgICAgICAgICAg
-	ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
-	ICAgICAgICAgICAgICAgICAgICAgICAgDSANAAAAACNtCwAXAAAAG10yO2NocmlzQGR1b25leDog
-	L3RtcAcAAAAAZDsMAC4AAAANG1ttG1syN20bWzI0bRtbSg0KG1swMTszMm0bWzQ1bS90bXAbWzAw
-	bSQgG1tLAAAAAJk7DAACAAAAGz0DAAAAg4QBAAEAAABwAwAAAOSsAgADAAAACHBhAwAAAOI2BAAB
-	AAAAYwMAAADmNAcAAQAAAGEDAAAA6voIAAEAAAB1AwAAAFxvCgABAAAAcgMAAADNDQwAAQAAACAD
-	AAAARQAOAAEAAAAtBAAAAE4/AgABAAAAUwQAAACEZwUAAQAAAHMEAAAARmcHAAEAAAAgBAAAALt4
-	CwABAAAAdAQAAACvtA0AAQAAAHQEAAAA29oOAAEAAAB5BQAAAGhKAgABAAAAcgUAAADOlwMAAQAA
-	AGUFAAAAOiIGAAEAAABjBQAAAH5RCQAbAAAAGz4NDQobXTI7cGFjYXVyIC1TcyB0dHlyZWMHBwAA
-	AOoECACKAwAAG1sxOzM1bWF1ci8bWzBtG1sxbXR0eXJlYyAbWzE7MzJtMS4wLjgtMhtbMG0gKDM0
-	KQ0KICAgIEEgdHR5IHJlY29yZGVyIGFuZCBwbGF5ZXINChtbMTszNW1hdXIvG1swbRtbMW10ZXJt
-	cmVjIBtbMTszMm0wLjE3LTEbWzBtICgxMSkNCiAgICBBIHNldCBvZiB0b29scyBmb3IgcmVjb3Jk
-	aW5nL3JlcGxheWluZyB0ZXh0LXRlcm1pbmFsIHNlc3Npb24sIGluIHRoZSB2ZWluIG9mIHR0eXJl
-	Yy4NChtbMTszNW1hdXIvG1swbRtbMW1wbGF5dHR5cmVjIBtbMTszMm0xLjAtMxtbMG0gKDYpDQog
-	ICAgYSBwbGF5ZXIgZm9yIHJlY29yZGVkIG5ldGhhY2sgZ2FtZXMgcHJvZHVjZWQgYnkgZGdhbWVs
-	YXVuY2gNChtbMTszNW1hdXIvG1swbRtbMW10dHlnaWYgG1sxOzMybTEuMC44LTIbWzBtICg2KQ0K
-	ICAgIEEgdG9vbCB0aGF0IGNvbnZlcnRzIGEgdHR5cmVjIGZpbGUgaW50byBnaWYgZmlsZXMuDQob
-	WzE7MzVtYXVyLxtbMG0bWzFtaXBidCAbWzE7MzJtMjAxNDEwMjYuMjE5NzQzMi0xG1swbSAoNCkN
-	CiAgICBBIGhpZ2gtdGVjaCB0dHlyZWMgcGxheWVyDQobWzE7MzVtYXVyLxtbMG0bWzFtdHR5cmVj
-	LWdpdCAbWzE7MzJtMjAxMzA5MTgtMRtbMG0gKDQpDQogICAgQSB0dHkgcmVjb3JkZXIgYW5kIHBs
-	YXllciAtIHRoaXMgaXMgbm90IHRoZSBvZmZpY2lhbCB1cHN0cmVhbSB2ZXJzaW9uDQobWzE7MzVt
-	YXVyLxtbMG0bWzFtc2VxMmdpZiAbWzE7MzJtMC4xMC40LTEbWzBtICgxKQ0KICAgIENvbnZlcnQg
-	YSB0dHlyZWMgcmVjb3JkIGludG8gYSBnaWYgYW5pbWF0aW9uIGRpcmVjdGx5DQobWzE7MzVtYXVy
-	LxtbMG0bWzFtc2VxMmdpZi1naXQgG1sxOzMxbTAuMTAuMy4xODIuMjUzZGFjYi0xG1swbSAoMCkN
-	CiAgICBDb252ZXJ0IGEgdHR5cmVjIHJlY29yZCBpbnRvIGEgZ2lmIGFuaW1hdGlvbiBkaXJlY3Rs
-	eQ0KBwAAAOsGCACYAAAAG1sxbRtbN20lG1syN20bWzFtG1ttICAgICAgICAgICAgICAgICAgICAg
-	ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
-	ICAgICAgICAgICAgICAgICAgICAgICAgICAgDSANG10yO2NocmlzQGR1b25leDogL3RtcAcHAAAA
-	x7wIADAAAAANG1ttG1syN20bWzI0bRtbSg0KG1swMTszMm0bWzQ1bS90bXAbWzAwbSQgG1tLGz0I
-	AAAAnV8IAAMAAAANDQo="></tty-player>
-   -->   
       </div><!-- /col-lg-8 -->
     </div><!-- /row -->
   </div> <!-- /container -->
@@ -188,26 +92,8 @@ window-title="filetitle"
     </div>
   </div>
 </div>
-<!--
-<script>
-$.ajax({
-type: 'GET',
-url: 'https://api.gitlapse.com/v1/ping',
-crossDomain: true,
-dataType: 'json'
-/* ,
-   data: {"some":"json"}
-   use it if you are passing params in a post request
- */
-}).done(function( data ) {
-  console.log( "ajax is working");
-  console.log( data );
-  console.log( data.ping );
-});
-</script>
--->
 
-
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 <script>
 $.urlParam = function(name){
   var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
@@ -249,3 +135,118 @@ dataType: 'json'
 <script src="/js/bootstrap.js"></script>
 </body>
 </html>
+
+<!--
+<script>
+$.ajax({
+type: 'GET',
+url: 'https://api.gitlapse.com/v1/ping',
+crossDomain: true,
+dataType: 'json'
+/* ,
+   data: {"some":"json"}
+   use it if you are passing params in a post request
+ */
+}).done(function( data ) {
+  console.log( "ajax is working");
+  console.log( data );
+  console.log( data.ping );
+});
+</script>
+-->
+
+<!--
+<tty-player id='gitlapse-player' autoplay loop controls src=''></tty-player>
+-->
+
+<!-- 
+<tty-player autoplay loop controls src='<%=@rec%>'></tty-player>
+-->
+<!--
+<tty-player autoplay loop controls src='vid.termrec'
+window-title="filetitle"
+></tty-player>
+-->
+<!--
+	<tty-player controls src='myrec.ttyrec'>
+	</tty-player>
+-->
+<!--
+	<tty-player id="gitplayer" defaultPlaybackRate="1" playbackRate=0.001 controls autoplay src="ttyrecord"></tty-player>
+-->
+<!--
+<tty-player controls autoplay loop src="data:application/x-ttyrec;base64,">
+</tty-player>
+-->
+<!-- <tty-player defaultPlaybackRate="1" playbackRate="10" controls autoplay loop  src="ttyrecord"></tty-player>
+-->
+<!--
+	<tty-player controls playbackRate="1000" src="data:application/x-ttyrec;base64,
+	Pb+SVoUbBQC9AAAAG1sxbRtbN20lG1syN20bWzFtG1swbSAgICAgICAgICAg
+	ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+	ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+	ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+	ICAgICAgICAgICAgICAgICAgDSANPb+SVlAcBQBAAAAAG10yO3pvdGhlcnN0
+	dXBpZGd1eUBrYWxhYmFsYTogfi9naXRsYXBzZS5jb20vZ2l0bGFwc2UuZ2l0
+	aHViLmlvBz2/klZsHAUAFAAAABtdMTsuLnBzZS5naXRodWIuaW8HPb+SVk3u
+	BQB+AAAADRtbMG0bWzI3bRtbMjRtG1tKG1swMTszMm3inpwgG1swMTszMm0g
+	G1szNm1naXRsYXBzZS5naXRodWIuaW8gG1swMTszNG1naXQ6KBtbMzFtbWFz
+	dGVyG1szNG0pIBtbMzNt4pyXG1swMG0bWzAwbRtbMDE7MzRtIBtbMDBtPb+S
+	VoruBQADAAAAG1tLPb+SVr/uBQAHAAAAG1s/MWgbPT6/klbgRgAAAQAAAGw+
+	v5JWObMBAAMAAAAIbHM+v5JWE2gDAAcAAAAbWz8xbBs+Pr+SVl1oAwABAAAA
+	DT6/klZ7aAMAAgAAAA0KPr+SVjtuAwAaAAAAG10yO2xzIC0tY29sb3I9dHR5
+	BxtdMTtscwc+v5JWhJEDALYAAAAbWzBtG1swMTszNG1iZXRhG1swbSAgYmV0
+	YS5odG1sICBDTkFNRSAgG1swMTszNG1jc3MbWzBtICAbWzAxOzM0bWZvbnRz
+	G1swbSAgaGFjay5yYiAgG1swMTszNG1pbWcbWzBtICBpbmRleC5odG1sICAb
+	WzAxOzM0bWpzG1swbSAgUkVBRE1FLm1kICBzYW1wbGUuaHRtbCAgdHR5cmVj
+	b3JkICAbWzAxOzM0bXZpZXdzG1swbT6/klY8kgMAAgAAAA0KPr+SViqUAwC9
+	AAAAG1sxbRtbN20lG1syN20bWzFtG1swbSAgICAgICAgICAgICAgICAgICAg
+	ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+	ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+	ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+	ICAgICAgICAgDSANPr+SVkGXAwBUAAAAG10yO3pvdGhlcnN0dXBpZGd1eUBr
+	YWxhYmFsYTogfi9naXRsYXBzZS5jb20vZ2l0bGFwc2UuZ2l0aHViLmlvBxtd
+	MTsuLnBzZS5naXRodWIuaW8HPr+SVlUEBAB+AAAADRtbMG0bWzI3bRtbMjRt
+	G1tKG1swMTszMm3inpwgG1swMTszMm0gG1szNm1naXRsYXBzZS5naXRodWIu
+	aW8gG1swMTszNG1naXQ6KBtbMzFtbWFzdGVyG1szNG0pIBtbMzNt4pyXG1sw
+	MG0bWzAwbRtbMDE7MzRtIBtbMDBtPr+SVo0EBAADAAAAG1tLPr+SVqYEBAAH
+	AAAAG1s/MWgbPUC/klY7RgcAAQAAAGVAv5JWfNELAAMAAAAIZXhAv5JWLmUN
+	AAEAAABpQb+SVjh9AAABAAAAdEG/klYCPwQACgAAABtbPzFsGz4NDQpBv5JW
+	IEcEAAkAAAAbXTI7ZXhpdAdBv5JWYUsEAAkAAAAbXTE7ZXhpdAc=
+	">
+	</tty-player>
+-->
+<!--
+	<tty-player autoplay loop src="data:application/x-ttyrec;base64,
+	AAAAAAttCwCBAAAAG1sxbRtbN20lG1syN20bWzFtG1ttICAgICAgICAgICAgICAgICAgICAgICAg
+	ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+	ICAgICAgICAgICAgICAgICAgICAgICAgDSANAAAAACNtCwAXAAAAG10yO2NocmlzQGR1b25leDog
+	L3RtcAcAAAAAZDsMAC4AAAANG1ttG1syN20bWzI0bRtbSg0KG1swMTszMm0bWzQ1bS90bXAbWzAw
+	bSQgG1tLAAAAAJk7DAACAAAAGz0DAAAAg4QBAAEAAABwAwAAAOSsAgADAAAACHBhAwAAAOI2BAAB
+	AAAAYwMAAADmNAcAAQAAAGEDAAAA6voIAAEAAAB1AwAAAFxvCgABAAAAcgMAAADNDQwAAQAAACAD
+	AAAARQAOAAEAAAAtBAAAAE4/AgABAAAAUwQAAACEZwUAAQAAAHMEAAAARmcHAAEAAAAgBAAAALt4
+	CwABAAAAdAQAAACvtA0AAQAAAHQEAAAA29oOAAEAAAB5BQAAAGhKAgABAAAAcgUAAADOlwMAAQAA
+	AGUFAAAAOiIGAAEAAABjBQAAAH5RCQAbAAAAGz4NDQobXTI7cGFjYXVyIC1TcyB0dHlyZWMHBwAA
+	AOoECACKAwAAG1sxOzM1bWF1ci8bWzBtG1sxbXR0eXJlYyAbWzE7MzJtMS4wLjgtMhtbMG0gKDM0
+	KQ0KICAgIEEgdHR5IHJlY29yZGVyIGFuZCBwbGF5ZXINChtbMTszNW1hdXIvG1swbRtbMW10ZXJt
+	cmVjIBtbMTszMm0wLjE3LTEbWzBtICgxMSkNCiAgICBBIHNldCBvZiB0b29scyBmb3IgcmVjb3Jk
+	aW5nL3JlcGxheWluZyB0ZXh0LXRlcm1pbmFsIHNlc3Npb24sIGluIHRoZSB2ZWluIG9mIHR0eXJl
+	Yy4NChtbMTszNW1hdXIvG1swbRtbMW1wbGF5dHR5cmVjIBtbMTszMm0xLjAtMxtbMG0gKDYpDQog
+	ICAgYSBwbGF5ZXIgZm9yIHJlY29yZGVkIG5ldGhhY2sgZ2FtZXMgcHJvZHVjZWQgYnkgZGdhbWVs
+	YXVuY2gNChtbMTszNW1hdXIvG1swbRtbMW10dHlnaWYgG1sxOzMybTEuMC44LTIbWzBtICg2KQ0K
+	ICAgIEEgdG9vbCB0aGF0IGNvbnZlcnRzIGEgdHR5cmVjIGZpbGUgaW50byBnaWYgZmlsZXMuDQob
+	WzE7MzVtYXVyLxtbMG0bWzFtaXBidCAbWzE7MzJtMjAxNDEwMjYuMjE5NzQzMi0xG1swbSAoNCkN
+	CiAgICBBIGhpZ2gtdGVjaCB0dHlyZWMgcGxheWVyDQobWzE7MzVtYXVyLxtbMG0bWzFtdHR5cmVj
+	LWdpdCAbWzE7MzJtMjAxMzA5MTgtMRtbMG0gKDQpDQogICAgQSB0dHkgcmVjb3JkZXIgYW5kIHBs
+	YXllciAtIHRoaXMgaXMgbm90IHRoZSBvZmZpY2lhbCB1cHN0cmVhbSB2ZXJzaW9uDQobWzE7MzVt
+	YXVyLxtbMG0bWzFtc2VxMmdpZiAbWzE7MzJtMC4xMC40LTEbWzBtICgxKQ0KICAgIENvbnZlcnQg
+	YSB0dHlyZWMgcmVjb3JkIGludG8gYSBnaWYgYW5pbWF0aW9uIGRpcmVjdGx5DQobWzE7MzVtYXVy
+	LxtbMG0bWzFtc2VxMmdpZi1naXQgG1sxOzMxbTAuMTAuMy4xODIuMjUzZGFjYi0xG1swbSAoMCkN
+	CiAgICBDb252ZXJ0IGEgdHR5cmVjIHJlY29yZCBpbnRvIGEgZ2lmIGFuaW1hdGlvbiBkaXJlY3Rs
+	eQ0KBwAAAOsGCACYAAAAG1sxbRtbN20lG1syN20bWzFtG1ttICAgICAgICAgICAgICAgICAgICAg
+	ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+	ICAgICAgICAgICAgICAgICAgICAgICAgICAgDSANG10yO2NocmlzQGR1b25leDogL3RtcAcHAAAA
+	x7wIADAAAAANG1ttG1syN20bWzI0bRtbSg0KG1swMTszMm0bWzQ1bS90bXAbWzAwbSQgG1tLGz0I
+	AAAAnV8IAAMAAAANDQo="></tty-player>
+   -->   
+
