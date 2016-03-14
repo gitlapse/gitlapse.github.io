@@ -234,7 +234,8 @@ dataType: 'json'
   console.log( data.content);
   console.log( $.urlParam('SHA') );
   //$('#gitplayer').attr('src',"data:application/x-ttyrec;base64," + data.content);
-  $('#gitlapse-player').attr('src',"data:application/x-ttyrec;base64," + data.content);
+  //$('#gitlapse-player').attr('src',"data:application/x-ttyrec;base64," + data.content);
+  $('tty-player').attr('src',"data:application/x-ttyrec;base64," + data.content);
   });
 </script>
 
