@@ -93,6 +93,10 @@ permalink: lapses/
 </div>
 
 <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script> 
+console.debug("jQuery "+ (jQuery ? $().jquery : "NOT") +" loaded")    
+console.debug("jQuery UI "+ ($.ui ? $.ui.version : "NOT") +" loaded")
+</script>
 <script>
 $.urlParam = function(name){
   var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
