@@ -206,6 +206,8 @@ dataType: 'json'
 });
 </script>
 -->
+
+
 <script>
 $.urlParam = function(name){
   var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
@@ -229,15 +231,17 @@ dataType: 'json'
    use it if you are passing params in a post request
  */
 }).done(function( data ) {
-  console.log( "ajax is working for /v1/lapses");
-  console.log( data.SHA);
-  console.log( data.content);
-  console.log( $.urlParam('SHA') );
+  console.log( "ajax is working for /v1/lapses"),
+  console.log( data.SHA),
+  console.log( data.content),
+  console.log( $.urlParam('SHA') ),
   //$('#gitplayer').attr('src',"data:application/x-ttyrec;base64," + data.content);
   //$('#gitlapse-player').attr('src',"data:application/x-ttyrec;base64," + data.content);
-  $('tty-player').attr('src',"data:application/x-ttyrec;base64," + data.content);
+  $('tty-player').attr("src","data:application/x-ttyrec;base64," + data.content)
   });
 </script>
+
+
 
 <!-- Bootstrap core JavaScript
     ================================================== -->
