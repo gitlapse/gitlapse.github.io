@@ -3,5 +3,5 @@
 // make a model instance and populate it with the SHA 
 // make a lapse.fetch()
 var lapse = new GitlapseVideo({SHA: "zerocool"});
-Backbone.sync(get, GitlapseVideo, {sha: "zerocool"});
+Backbone.sync(GET, GitlapseVideo, {sha: "zerocool"});
 console.log(lapse.fetch());
