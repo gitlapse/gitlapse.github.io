@@ -3,7 +3,7 @@ var GitlapseVideo = Backbone.Model.extend({
   // urlRoot : '/v1/lapses',
   urlRoot : 'https://api.gitlapse.com/v1/lapses/',
     defaults: {
-      title: 'some title',
+      SHA: 'some title',
     content: 'an placeholder advertisment for coder link'
     },
     // Validate when we are setting an attribute
