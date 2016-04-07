@@ -10,9 +10,9 @@ var GitlapseVideo = Backbone.Model.extend({
     validate: function(attrs){
       if ( ! attrs.title) {
 	"Every video must have a title"
-      }
+      };
       if ( ! attrs.content ) {
 	"Every video must have a content"
-      }
+      };
     }
 });
