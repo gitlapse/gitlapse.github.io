@@ -40,8 +40,10 @@ permalink: lapses/
 -->
 
 <link rel="stylesheet" href="/css/tty-player.css">
-<script src="/js/term.js"></script>
-<script src="/js/tty-player.js"></script>
+<script src="/libs/term.js"></script>
+<script src="/libs/tty-player.js"></script>
+<script src="/js/models/gitlapsevideo_model.js"></script>
+<script src="/js/views/gitlapsevideo_views.js"></script>
 
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -104,6 +106,7 @@ $.urlParam = function(name){
     return results[1] || 0;
   }
 }
+/*
 $.ajax({
 type: 'GET',
 //url: 'https://api.gitlapse.com/v1/git?SHA=1b77b4aac9e1111ce9cba1451d15e1cdfeafe1f9',
@@ -117,6 +120,7 @@ crossDomain: true,
    data: {"some":"json"}
    use it if you are passing params in a post request
  */
+/*
 }).done(function( data ) {
   console.log( "ajax is working for /v1/lapses"),
   console.log( data.SHA),
@@ -126,17 +130,17 @@ crossDomain: true,
   //$('#gitlapse-player').attr('src',"data:application/x-ttyrec;base64," + data.content);
   $('tty-player').attr("src","data:application/x-ttyrec;base64," + data.content)
   });
+*/
 </script>
 
 <script> 
 // include backbone
 // make a routes backbone application
-
 </script>
 
 <!-- Bootstrap core JavaScript
     ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="/js/bootstrap.js"></script>
+<script src="/libs/bootstrap.js"></script>
 </body>
 </html>
