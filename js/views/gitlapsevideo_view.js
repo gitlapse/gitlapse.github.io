@@ -13,6 +13,6 @@ var GitlapseVideoView = Backbone.View.extend({
     template: _.template("<tty-player autoplay loop controls src='<%= contnet %>'></tty-player>")
   // template: _.template("<tty-player autoplay loop controls src='https://api.gitlapse.com/v1/lapses/dd'></tty-player>")
   render: function(){
-    this.$el.html()
+    this.$el.html();
   }
 });
