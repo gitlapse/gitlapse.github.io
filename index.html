@@ -1,190 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
-<meta name="author" content="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-<title>Gitlapse</title>
+    <title>Gitlapse</title>
 
-<!-- Bootstrap core CSS -->
-<link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Bootstrap core CSS 
+      <link href="css/bootstrap.css" rel="stylesheet">
+    -->
 
-<!-- Custom styles for this template -->
-<link href="css/main.css" rel="stylesheet">
-<link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-<link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="img/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-<link rel="manifest" href="img/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/tty-player.css">
 
-<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-<script src="js/chart.js"></script>
+    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
-<script src="js/typed.js"></script>
-<script>
-$(function(){
-    $("#typed").typed({
-      //strings: ["share the evolution of your <h2> code</h2>...", "Second sentence."],
-stringsElement: $('#typed-strings'),
-
-contentType: 'html',
-// time before typing starts
-startDelay: 1400,
-// backspacing speed
-backSpeed: -10,
-// time before backspacing
-backDelay: 4000,
-loop: true,
-showCursor: true,
-// character for cursor
-cursorChar: "|",
-// attribute to type (null == text)
-attr: null,
-typeSpeed: -10
-});
-    });
-</script>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/libs/chart.js"></script>
+    <script src="js/libs/term.js"></script>
+    <script src="js/libs/tty-player.js"></script>
 
 
 
-<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!--[if lt IE 9]>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
-</head>
+  </head>
 
-<body>
+  <body class="container-fluid centered">
 
-<!-- Fixed navbar -->
-<div class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <!-- 
-	  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-	    <span class="icon-bar"></span>
-	    <span class="icon-bar"></span>
-	  </button>
--->
-      <a herf="http://www.gitlapse.com"><img style= "height: 60px; width: auto;" src="img/logo.png"/>
-      </div>
-    </div>
-  </div>
-
-
-
-  <div id="hello">
-    <div class="container">
-      <div class="row">
-	<div class="col-lg-8 col-lg-offset-2 centered">
-	  <h2 style="color: #74cfae;">
-	    <div class="type-wrap">
-	      <h2>
-		launching soon . . .
-	      </h2>
-
-	      <!--
-	      <div id="typed-strings">
-		<p><strong>gitlapse</strong> is an <i>interactive</i> timeline application for your github repositories . . .</p>
-		<p><strong>gitlapse</strong> lets you place video & audio comments to commits via mobile\web as you view them . . .</p>
-		<p><strong>gitlapse</strong> is an aggregated timeline application for all your git repositories . . .</p>
-		<p><strong>gitlapse</strong> is a <i>sophisticated</i> timeline application for all your github repositories . . .</p>
-		<p><strong>gitlapse</strong> is an media-rich timeline application for all your github repositories . . .</p>
-		<p><strong>gitlapse</strong> is a sophisticated timeline application for all your code repositories . . .</p>
-		<p>share the <strong>evolution</strong> of your code . . . </p>
-		<p>study your <strong>favourite</strong> opensource projects with ease . . . </p> 
-		<p>attach <strong>video comments</strong> to your code . . . </p>
-		<p>build your <strong>gitlapse</strong> to be a <strong>youtube for developers</strong> . . . </p>
-		<p>stay <strong>entertained</strong> with your community . . . </p>
-		<p><strong>discover</strong> the stories behind the code you use...</p>
-		<p><strong>demystify</strong> your code and <strong>attract contributions</strong> . . . </p> 
-		<p>contemplate, get <strong>inspired</strong>, and inspire others...</p> 
-		<p><strong>review</strong> your team's progress with <strong>Multimedia Reporting for the Enterprise</strong> . . . </p> 
-		      </div>
-	      <span id="typed" style="white-space:pre;"></span>
-	    </div>
-	    -->
-
-	      <!--
-		    share the evolution of your code...<h1>
-		    study your favourite opensource projects with ease...<h1>
--->
-	      <!-- <h1 style="color: #74cfae;">Share the evolution of your code for better collaboration..<h1>
--->
-	      <!-- <h1 style="color: #74cfae;">Share the evolution of your code with others for better collaboration in your opensource and enterprise projects...</h1>
--->
-	      <!-- <h1 style="color: #74cfae;">enjoy video & audio code commit messages for your opensource and enterprise projects...</h1>
--->
-	      <h4>
-		<p>crafted with <i style= "color: red"class="fa fa-heart"></i> forever free for opensource.</p>
-	      </h4>
-	      <!-- 
-			  <h3>Video and Audio git commit messages for your opensource and enterprise projects</h3>
-			  <h3>Video and Audio git commit messages for your opensource and enterprise projects</h3>
-			  <h6>Voting system for autonomous opensource maintability, if you are an opensource maintainer, gitlapse help you choose which branches and commits that should get integrated into your mainstream, you can set it on autopilot and the community would use the up/down vote system to help you pick a winner, you can view a video of the commit, along with the supporters videos explaining why the upvoted or downvoted it, and you get to decide</h6>
-				<h2>FREE BOOTSTRAP THEMES</h2>
--->
-	    </div><!-- /col-lg-8 -->
-	  </div><!-- /row -->
-	</div> <!-- /container -->
-      </div><!-- /hello -->
-
-
-      <div id="f-right">
-	<div class="container">
-	  <div class="row">
-	    <h4>
-	    </h4>
-	  </div>
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+	<div class="navbar-header">
+	  <!-- 
+     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+     <span class="icon-bar"></span>
+     <span class="icon-bar"></span>
+     </button>
+	  -->
+	  <a herf="http://www.gitlapse.com"><img style= "height: 60px; width: auto;" src="img/logo.png"/>
 	</div>
       </div>
+    </div>
 
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog gitlapse-modal" role="document">
+	<div class="modal-content">
+<!--
+	  <div class="modal-header">
+	    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+	  </div>
+-->
+	  <div class="modal-body container-fluid">
+	    <span class="centered">
+	      <tty-player controls  loop src="data:application/x-ttyrec;base64,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"></tty-player>
+	    </span>
+	    <!--
+       <tty-player autoplay controls poster loop src="data:application/x-ttyrec;base64,DATA/lapses/a48ef87480c687bb698d5b44c9d85842ae7e3c63_b495a649e1219b0314116325b25b328a7e6dff7c"></tty-player>
+
+       <tty-player controls src="vim.ttyrec" poster=npt:16.54></tty-player>
+       <tty-player autoplay controls loop src=tty-screencast.ttyrec></tty-player>
+	    -->
+	  </div>
+<!--
+	  <div class="modal-footer">
+	    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	    <button type="button" class="btn btn-primary">Save changes</button>
+	  </div>
+-->
+	</div>
+      </div>
+    </div>
+
+    </br>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/css/bootstrap-select.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.min.js"></script>
+
+    <!-- (Optional) Latest compiled and minified JavaScript translation files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/i18n/defaults-*.min.js"></script>
+
+
+    <div class="container" style="width: 400px">
+      <div class="row">
+	<div class=".col-md-4 .col-md-offset-3">
+	  <form>
+	    <select class="form-control selectpicker">
+	      <option> 
+	      <img src="img/github_logo.png"> 
+	      github
+	      </option>
+	      <!--
+	 <option data-icon="glyphicon-heart" data-subtext="private repos require oauth">Eye of Medusa</option>
+	      -->
+	      <option>gitlab</option>
+	    </select>
+	    </br>
+	    </br>
+	    </br>
+	    <input type="text" class="form-control" placeholder="Repo Owner">
+	    <!--
+       GET github.com/search/users
+	    -->
+	    </br>
+	    <input type="text" class="form-control" placeholder="Repo Name">
+	    <!--
+       GET github.com/users/:username/repos
+	    -->
+	    </br>
+	    <!--
+       drop down shows branch\commit_sha\blob_name\blob_sha, user selects and the sha of the chosen blob gets inserted 
+	    -->
+	    <input type="text" class="form-control" placeholder="Start Blob SHA">
+	    </br>
+	    <input type="text" class="form-control" placeholder="Finish Blob SHA">
+	    </br>
+
+	    <!-- Button trigger modal 
+	    <button id="generate_lapse" type="button" class="btn btn-success btn-lg btn-block">
+	    -->
+	    <button type="button" class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#myModal">
+	      Generate Gitlapse 
+	      <!--
+	 (checks if lapse exists on the server and say "Watch Gitlapse")
+	      -->
+	    </button
+
+	  </form>
+	</div>
+      </div> 
+    </div> 
+
+    <script>
+// lapse.html?host=github&repo_owner=zotherstupidguy&repo_name=mushin
+$("#generate_lapse").click(function( event ) {
+  console.log("submitted");
+  window.location.href = window.location.href + "?ID=" + someid ;
+});
+
+    </script>
+    <script>
+
+function getParameterByName(name, url) {
+  if (!url) {
+    url = window.location.href;
+  }
+  name = name.replace(/[\[\]]/g, "\\$&");
+  var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+  results = regex.exec(url);
+  if (!results) return null;
+  if (!results[2]) return '';
+  return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
+var host  	= getParameterByName('host'); // "github"
+var owner 	= getParameterByName('repo_owner'); // "zotherstupidguy"
+var reponame 	= getParameterByName('repo_name'); // "mushin"
+var start_sha 	= getParameterByName('start_sha'); // ""
+var finish_sha 	= getParameterByName('finish_sha'); // ""
+console.log("host: " + host)
+console.log("repo_owner: " + owner)
+console.log("repo_name: " + reponame)
+console.log("start_sha: " + start_sha)
+console.log("finish_sha: " + finish_sha)
+    </script>
+      </br>
 
       <div id="f-left">
 	<div class="container">
 	  <div class="row">
-	    <h6>
+	    <h4>
+	      <p>
+	      crafted with <i style= "color: red"class="fa fa-heart"></i> forever free for opensource. Study your favourite opensource projects with ease!
+	      </p>
+	    </h4>
+	  </div>
 
-	      <div style="display: block!; overflow: hidden!;">
-		<p> 
-		<div align="right">
+	  <div class="row">
+	    <h4>
+	      <h6>
+
+		<div style="display: block!; overflow: hidden!;">
+		  <p> 
+		  <div align="right">
+		  </div>
+		  </p>
+
+		  <p> 
+		  <div align="left">
+		    <a href='https://gitlapse.com'> © 2016 Gitlapse </a> . 
+<!--
+		    <a href='https://gitlapse.com/sponsers'> Sponsers </a> .
+		    <a href="https://gitlapse.com/opensource"> Opensource </a> . 
+		    <a href='https://gitlapse.com/docs'> API Docs </a> .
+		    <a href='https://gitlapse.com/pricing'> Pricing </a> .
+		    <a href='https://gitlapse.com/careers'> Careers </a> .
+		    <a href='https://gitlapse.com/ecosystem'> Ecosystem </a> .
+		    <a href='https://gitlapse.com/terms'> Terms </a> . 
+		    <a href='https://gitlapse.com/contact'> Contact </a>  
+-->
+		  </div>
+
+		  </p>
 		</div>
-		</p>
 
-		<p> 
-		<div align="left">
-		  <a href='https://gitlapse.com'> © 2016 Gitlapse </a> . 
-		  <a href='https://gitlapse.com/sponsers'> Sponsers </a> .
-		  <a href="https://gitlapse.com/opensource"> Opensource </a> . 
-		  <a href='https://gitlapse.com/docs'> API Docs </a> .
-		  <a href='https://gitlapse.com/pricing'> Pricing </a> .
-		  <a href='https://gitlapse.com/careers'> Careers </a> .
-		  <a href='https://gitlapse.com/ecosystem'> Ecosystem </a> .
-		  <a href='https://gitlapse.com/terms'> Terms </a> . 
-		  <a href='https://gitlapse.com/contact'> Contact </a>  
-		</div>
-
-		</p>
-	      </div>
-
-	    </h6>
+	      </h6>
 
 	  </div>
 	</div>
@@ -192,14 +244,14 @@ typeSpeed: -10
 
 
       <!-- Bootstrap core JavaScript
-    ================================================== -->
-      <!-- Placed at the end of the document so the pages load faster -->
-      <script src="js/bootstrap.js"></script>
-      <script>
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="js/libs/bootstrap.js"></script>
+	<script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
- (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
- m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
- })(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-72057069-1', 'auto');ga('send', 'pageview');
-      </script>
-      </body>
-      </html>
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-72057069-1', 'auto');ga('send', 'pageview');
+	</script>
+  </body>
+</html>

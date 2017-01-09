@@ -1,0 +1,112 @@
+{
+  "seperator": null,
+  "start_blob_content": "cGluZ3d5bm4KPT09PT09PT0KClF1ZXN0aW9ucywgZmVlZGJhY2ssIHN1Z2dl\nc3Rpb25zLCBldGMuCg==\n",
+  "blob_language": "ruby",
+  "lines": [
+    {
+      "operation": "deletion",
+      "number": "1",
+      "content": "cGluZ3d5bm4K\n"
+    },
+    {
+      "operation": "deletion",
+      "number": "2",
+      "content": "PT09PT09PT0K\n"
+    },
+    {
+      "operation": "addition",
+      "number": "1",
+      "content": "IyMjIHBpbmd3eW5uCg==\n"
+    },
+    {
+      "operation": "deletion",
+      "number": "4",
+      "content": "UXVlc3Rpb25zLCBmZWVkYmFjaywgc3VnZ2VzdGlvbnMsIGV0Yy4K\n"
+    },
+    {
+      "operation": "addition",
+      "number": "3",
+      "content": "UXVlc3Rpb25zLCBmZWVkYmFjaywgc3VnZ2VzdGlvbnMsIGV0Yy4gVGhlIHJp\nZ2h0IHNwb3QgaWYgeW91Ogo=\n"
+    },
+    {
+      "operation": "addition",
+      "number": "4",
+      "content": "Cg==\n"
+    },
+    {
+      "operation": "addition",
+      "number": "5",
+      "content": "LSB3YW50IHRvIGtub3cgX2hvdyBHaXRIdWIgZG9lcyB4eXo/Xwo=\n"
+    },
+    {
+      "operation": "addition",
+      "number": "6",
+      "content": "LSBoYXZlIGFuIG4wMGIgUnVieSBxdWVzdGlvbj8gCg==\n"
+    },
+    {
+      "operation": "addition",
+      "number": "7",
+      "content": "LSBbT2N0b2tpdF1bXSBoYXMgeW91IGRvd24gYW5kIHlvdSBuZWVkIHNvbWUg\nSEFMUCEK\n"
+    },
+    {
+      "operation": "addition",
+      "number": "8",
+      "content": "LSBoYXZlIGEgZmF2b3JpdGUgcHJvamVjdCB5b3Ugd2FudCB0byBzaGFyZT8K\n"
+    },
+    {
+      "operation": "addition",
+      "number": "9",
+      "content": "LSB3b25kZXIgd2hhdCBbLmRvdGZpbGVzXVtdIGFyZSBhbnl3YXkuCg==\n"
+    },
+    {
+      "operation": "addition",
+      "number": "10",
+      "content": "LSBuZWVkL2hhdmUgc3VnZ2VzdGlvbnMgZm9yIGdyZWF0IHNpbmdlci9zb25n\nd3JpdGVyIChhbHQpY291bnRyeSBhcnRpc3RzIG9uIFJkaW8uCg==\n"
+    },
+    {
+      "operation": "addition",
+      "number": "11",
+      "content": "LSB3YW50IHRvIGtub3cgaG93IHRvIGdldCBzdGFydGVkIGluIG9wZW4gc291\ncmNlLgo=\n"
+    },
+    {
+      "operation": "addition",
+      "number": "12",
+      "content": "LSBoYXZlIChhcmUgY29uc2lkZXJpbmcpIGEgam9iIGluIGRldmVsb3BtZW50\nIGFuZCB3YW50IHRvIGtub3cgaG93IGxldmVsIHVwLgo=\n"
+    },
+    {
+      "operation": "addition",
+      "number": "13",
+      "content": "LSBkb24ndCBnZXQgb3Igd291bGQgbGlrZSB0byBwdXJjaGFzZSB0aGUgdGVl\nIHNoaXJ0IEknbSB3ZWFyaW5nLgo=\n"
+    },
+    {
+      "operation": "addition",
+      "number": "14",
+      "content": "LSBoYXZlIGZlZWRiYWNrIG9uIGEgdGFsayBJIGdhdmUuCg==\n"
+    },
+    {
+      "operation": "addition",
+      "number": "15",
+      "content": "Cg==\n"
+    },
+    {
+      "operation": "addition",
+      "number": "16",
+      "content": "Li4uIG9yIGp1c3Qgd2FudCB0byBzYXkgImhvd2R5LiIK\n"
+    },
+    {
+      "operation": "addition",
+      "number": "17",
+      "content": "Cg==\n"
+    },
+    {
+      "operation": "addition",
+      "number": "18",
+      "content": "W09jdG9raXRdOiBodHRwczovL2dpdGh1Yi5jb20vb2N0b2tpdC9vY3Rva2l0\nLnJiCg==\n"
+    },
+    {
+      "operation": "addition",
+      "number": "19",
+      "content": "Wy5kb3RmaWxlc106IGh0dHA6Ly9kb3RmaWxlcy5naXRodWIuaW8K\n"
+    }
+  ]
+}
